@@ -76,8 +76,8 @@ func (s *ESPSocket) Receive() ([]byte, error) {
 
 	// 设置读取超时
 	tv := syscall.Timeval{
-		Sec:  int64(s.timeout / time.Second),
-		Usec: int64((s.timeout % time.Second) / time.Microsecond),
+		Sec:  int(s.timeout / time.Second),
+		Usec: int((s.timeout % time.Second) / time.Microsecond),
 	}
 	syscall.SetsockoptTimeval(s.rawFd, syscall.SOL_SOCKET, syscall.SO_RCVTIMEO, &tv)
 
