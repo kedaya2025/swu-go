@@ -75,10 +75,7 @@ func (s *ESPSocket) Receive() ([]byte, error) {
 	buf := make([]byte, 2048)
 
 	// 设置读取超时
-	tv := durationToTimeval(
-		int64(s.timeout/time.Second),
-		int64((s.timeout%time.Second)/time.Microsecond),
-	)
+	tv := syscall.NsecToTimeval(s.timeout.Nanoseconds())
 	syscall.SetsockoptTimeval(s.rawFd, syscall.SOL_SOCKET, syscall.SO_RCVTIMEO, &tv)
 
 	n, err := syscall.Read(s.rawFd, buf)
