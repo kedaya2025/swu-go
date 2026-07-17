@@ -9,7 +9,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/iniwex5/netlink"
+	"github.com/kedaya2025/netlink"
 	"golang.org/x/sys/unix"
 )
 

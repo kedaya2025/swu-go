@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/iniwex5/netlink"
+	"github.com/kedaya2025/netlink"
 	"github.com/1239t/swu-go/pkg/driver"
 	"github.com/1239t/swu-go/pkg/ikev2"
 	"github.com/1239t/swu-go/pkg/ipsec"

@@ -6,7 +6,7 @@ import (
 	"net"
 	"syscall"
 
-	"github.com/iniwex5/netlink"
+	"github.com/kedaya2025/netlink"
 )
 
 // XFRMManager 封装 Linux XFRM 子系统操作

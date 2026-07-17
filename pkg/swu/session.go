@@ -12,8 +12,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/iniwex5/netlink"
-	"github.com/iniwex5/netlink/nl"
+	"github.com/kedaya2025/netlink"
+	"github.com/kedaya2025/netlink/nl"
 	"github.com/1239t/swu-go/pkg/crypto"
 	"github.com/1239t/swu-go/pkg/driver"
 	"github.com/1239t/swu-go/pkg/eap"
